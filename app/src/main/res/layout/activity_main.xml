@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/deepviolet"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/StartUp"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="175dp"
+        android:layout_height="64dp"
+        android:background="@android:color/holo_red_dark"
+        android:drawableRight="@drawable/baseline_arrow_forward_24"
+        android:text="START UP"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="221dp"
+        android:layout_height="291dp"
+        android:background="@color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/__logo_round"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

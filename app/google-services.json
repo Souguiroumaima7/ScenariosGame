@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "358373551655",
+    "project_id": "scenariosgames",
+    "storage_bucket": "scenariosgames.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358373551655:android:a560b7e9e1ed5e3cac6802",
+        "android_client_info": {
+          "package_name": "com.example.scenariosgames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358373551655-bhjb89f2usvngb3de2q54c56rc2alpp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSYTbVaOPbvF8mj6YvMWN4TSLE0xv_evk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358373551655-bhjb89f2usvngb3de2q54c56rc2alpp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

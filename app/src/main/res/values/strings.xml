@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ScenariosGames</string>
+    <string name="title_activity_sign_up" />
+    <string name="default_web_client_id" />
+    <string name="facebook_app_id">231708665868950</string>
+    <string name="facebook_client_token">f45a596cb8e2e746c8c20cdb32bf0cf4</string>
+    <string name="fb_login_protocol_scheme"></string>
+    <string name="title_activity_jeu">Jeu</string>
+    <string name="title_activity_download_games_content">DownloadGamesContent</string>
+
+</resources>
