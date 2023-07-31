@@ -1,13 +1,23 @@
-package com.jim.countdowntimer
+package com.example.scenariosgames.CreationGame
 
+import android.os.Bundle
 import android.os.CountDownTimer
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.scenariosgames.R
 
 import java.util.*
 import java.util.concurrent.TimeUnit
+class Timer(): AppCompatActivity() {
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+
+    }
+}
 class HomeViewModel : ViewModel() {
     private var timeCountInMilliSeconds = 1 * 60000.toLong()
     val tokenMaxTimer = 1 * 60 * 1000.toLong()
@@ -73,18 +83,13 @@ class HomeViewModel : ViewModel() {
         }
     }
 
-    /**
-     * method to initialize the values for count down timer
-     */
     private fun setTimerValues() {
         val time = 1   //Time time in minutes
         // assigning values after converting to milliseconds
         timeCountInMilliSeconds = time * 60 * 1000.toLong()
     }
 
-    /**
-     * method to stop count down timer
-     */
+
     private fun stopCountDownTimer() {
         countDownTimer!!.cancel()
     }
@@ -95,12 +100,6 @@ class HomeViewModel : ViewModel() {
         generateRand()
     }
 
-    /**
-     * method to convert millisecond to time format
-     *
-     * @param milliSeconds
-     * @return HH:mm:ss time formatted string
-     */
     private fun hmsTimeFormatter(milliSeconds: Long): String {
         return String.format(
             "%02d:%02d:%02d",

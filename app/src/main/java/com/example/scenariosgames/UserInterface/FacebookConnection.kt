@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
 import com.example.scenariosgames.R
 import com.facebook.AccessToken
@@ -25,7 +26,7 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 
-class FacebookConnection : AppCompatActivity() {
+class FacebookConnection : ComponentActivity() {
 
     // [START declare_auth]
     private lateinit var auth: FirebaseAuth

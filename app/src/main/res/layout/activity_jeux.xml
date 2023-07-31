@@ -1,7 +1,283 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</LinearLayout>
+    <!-- Status Bar -->
+
+    <Button
+        android:id="@+id/Amir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/rectangleshape"
+        android:text="Amir"
+        app:layout_constraintBaseline_toBaselineOf="@+id/alex"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <!-- Add status bar content here, e.g., text, icons, etc. -->
+        <TextView
+            android:id="@+id/statusbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Bar Content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/createagame"
+        android:layout_width="161dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="130dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Create a game"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="69dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="18dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toTopOf="@+id/uploadpicture"
+        app:layout_constraintEnd_toStartOf="@+id/createagame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:srcCompat="@drawable/navigation_back_arrow_svgrepo_com"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/uploadpicture"
+        android:layout_width="334dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/rectangleshape"
+        android:drawableStart="@drawable/camera"
+        android:padding="8dp"
+        android:text="Upload  Picture"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/gametype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createagame"
+        app:layout_constraintVertical_bias="0.592"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/gametype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="242dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Game Type"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/adventure"
+        android:layout_width="99dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/rectangleshape"
+        android:text="adventure"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Difficulty"
+        app:layout_constraintEnd_toStartOf="@+id/Exploration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gametype"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/Exploration"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/rectangleshape"
+        android:text="exploration"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/adventure"
+        app:layout_constraintEnd_toStartOf="@+id/Engima"
+        app:layout_constraintStart_toEndOf="@+id/adventure"
+        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/Engima"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/rectangleshape"
+        android:text="engima"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Exploration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Exploration"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/Difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="81dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Difficulty"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gametype"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/Facile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangleshape"
+        android:text="Facile"
+        app:layout_constraintStart_toStartOf="@+id/Difficulty"
+        app:layout_constraintTop_toBottomOf="@+id/Difficulty"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:background="@drawable/rectangleshape"
+        android:text="Normal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Facile"
+        app:layout_constraintStart_toEndOf="@+id/Facile"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/Difficile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangleshape"
+        android:text="Difficile"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Normal"
+        app:layout_constraintEnd_toEndOf="@+id/Amir"
+        app:layout_constraintStart_toStartOf="@+id/Engima"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/NoOfPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="No of Players"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Facile"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/Mike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rectangleshape"
+        android:text="Mike"
+        app:layout_constraintBottom_toTopOf="@+id/Gamecost"
+        app:layout_constraintEnd_toEndOf="@+id/Gamecost"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/alex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/rectangleshape"
+        android:text="Alex"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Mike"
+        app:layout_constraintStart_toEndOf="@+id/Gamecost"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/Gamecost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Game cost ($)"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/cost"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/cost"
+        android:layout_width="309dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="105dp"
+        android:background="@drawable/rectangleshape"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintTop_toBottomOf="@+id/NoOfPlayers"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,VisualLintButtonSize"
+        tools:layout_editor_absoluteX="19dp" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="190dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/roundshapebtn"
+        android:text="Next"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

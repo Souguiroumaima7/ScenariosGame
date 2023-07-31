@@ -1,8 +1,238 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
+    android:id="@+id/Name"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" />
+    android:orientation="vertical">
+
+    <!-- Status Bar -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Extraviolet"
+        android:gravity="center"
+        android:padding="40dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Add status bar content here, e.g., text, icons, etc. -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Bar Content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            tools:ignore="HardcodedText,TextContrastCheck"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="93dp"
+            android:layout_height="4dp"
+            android:layout_marginBottom="256dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="93dp"
+            android:layout_height="4dp"
+            android:layout_marginBottom="256dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.459"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="93dp"
+            android:layout_height="4dp"
+            android:layout_marginBottom="256dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.849"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            style="@style/CardView.Dark"
+            android:layout_width="309dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="42dp"
+            android:background="@color/grey"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textLongMessage"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/Agree"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="LabelFor,MissingConstraints,SpeakableTextPresentCheck,TextFields,VisualLintOverlap" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            style="@style/CardView.Dark"
+            android:layout_width="309dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="18dp"
+            android:background="@color/grey"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textLongMessage"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/Emailview"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="LabelFor,MissingConstraints,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            style="@style/CardView.Dark"
+            android:layout_width="309dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/grey"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textLongMessage"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/PasswordView"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="LabelFor,MissingConstraints,SpeakableTextPresentCheck,TextFields" />
+
+        <TextView
+            android:id="@+id/Emailview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="274dp" />
+
+        <!-- Google Logo -->
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="320dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginBottom="17dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/Nameview"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/Nameview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="158dp" />
+
+        <TextView
+            android:id="@+id/PasswordView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="393dp" />
+
+        <Button
+            android:id="@+id/Agree"
+            android:layout_width="23dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginBottom="69dp"
+            android:background="@color/Extraviolet"
+            app:layout_constraintBottom_toTopOf="@+id/view5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="68dp"
+            android:text="@string/i_agree_with_terms_and_privacy"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/view5"
+            app:layout_constraintStart_toEndOf="@+id/Agree"
+            tools:ignore="MissingConstraints,VisualLintBounds" />
+
+        <Button
+            android:id="@+id/SignUpwithGoogle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="11dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/icons8_google_48"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sign Up With Google"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
+            app:layout_constraintEnd_toEndOf="@+id/view3"
+            app:layout_constraintStart_toStartOf="@+id/Nameview"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
+
+        <Button
+            android:id="@+id/buttonsign"
+            android:layout_width="248dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="149dp"
+            android:background="@color/Extraviolet"
+            android:text="@string/sign_up"
+            android:textColor="#66BB6A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ package com.example.scenariosapplication.UserInterface
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
 import com.example.scenariosgames.R
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -18,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 
-class GoogleConnection : AppCompatActivity() {
+class GoogleConnection : ComponentActivity() {
 
     private val TAG = "GoogleActivity"
     private val RC_SIGN_IN = 9001

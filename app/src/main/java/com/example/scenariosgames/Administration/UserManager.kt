@@ -1,17 +1,10 @@
-package com.example.scenariosapplication.Administration
+package com.example.scenariosgames.Administration
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import com.example.scenariosgames.R
+import androidx.activity.ComponentActivity
 
-class UserManager  : AppCompatActivity(){
+data class User(val id: Int, var name: String, var email: String)
+class UserManager  : ComponentActivity(){
 
-    data class User(val id: Int, var name: String, var email: String)
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_users_update)
-
-    }
     private val users: MutableList<User> = mutableListOf()
 
     fun createUser(name: String, email: String) {
@@ -34,7 +27,7 @@ class UserManager  : AppCompatActivity(){
         }
     }
 
-    fun getUserById(id: Int): User? {
+    private fun getUserById(id: Int): User? {
         return users.find { it.id == id }
     }
 
