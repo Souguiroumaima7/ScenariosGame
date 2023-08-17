@@ -96,10 +96,10 @@
             android:layout_width="141dp"
             android:layout_height="48dp"
             android:id="@+id/buttonvide"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="20dp"
             app:layout_constraintBottom_toTopOf="@+id/startgame"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="144dp"
+            android:layout_marginStart="116dp"
             android:background="@drawable/rectangleshape"
             tools:ignore="SpeakableTextPresentCheck" />
 

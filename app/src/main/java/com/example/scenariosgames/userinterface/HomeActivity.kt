@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -41,13 +40,19 @@ class HomeActivity : ComponentActivity() {
         locationtext = findViewById(R.id.location)
         paristext = findViewById(R.id.paris)
 
+        updownbutton = findViewById(R.id.updown_)
+        arrowforward = findViewById(R.id.arrowforward)
+        sharebutton = findViewById(R.id.share)
+        readtos = findViewById(R.id.ReadTOS)
+        confidentialitybutton = findViewById(R.id.Confidentiality)
+        readmorebutton = findViewById(R.id.readmore)
+
         doesabout = findViewById(R.id.Howdoesitwork)
         about = findViewById(R.id.aboutus)
         descriptiontext = findViewById(R.id.textView4)
         readmore = findViewById(R.id.readmore)
 
         updateCityTextView()
-
         updownbutton.setOnClickListener {
             currentCityIndex = (currentCityIndex + 1) % cities.size
             updateCityTextView()
@@ -70,6 +75,7 @@ class HomeActivity : ComponentActivity() {
             val intent = Intent(this, ExploreGame::class.java)
             startActivity(intent)
         }
+
     }
 
 

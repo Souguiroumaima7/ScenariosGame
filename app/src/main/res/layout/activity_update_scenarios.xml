@@ -1,302 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="410dp"
-        android:layout_height="76dp"
-        android:background="#FFFFFF"
-        tools:ignore="DuplicateIds,MissingConstraints,VisualLintBounds"
+            android:id="@+id/relativeLayout"
+            android:layout_width="422dp"
+            android:layout_height="75dp"
+            android:background="#FFFFFF"
+            tools:ignore="DuplicateIds,MissingConstraints,VisualLintBounds"
 
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="407dp">
-
-        <TextView
-            android:id="@+id/Scenarios1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="88dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/scenarios"
-            android:textAlignment="textStart"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:visibility="visible"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="82dp"
-            android:layout_height="109dp"
-            android:contentDescription="@string/img_"
-            app:srcCompat="@mipmap/icon"
-            tools:ignore="VisualLintBounds"
-            tools:layout_editor_absoluteX="6dp"
-            tools:layout_editor_absoluteY="-25dp" />
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="17dp"
-            android:layout_height="25dp"
-            android:contentDescription="@string/___todo"
-            app:srcCompat="@drawable/timer_svgrepo_com"
-            tools:layout_editor_absoluteX="97dp"
-            tools:layout_editor_absoluteY="41dp" />
+            android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout1"
+            app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/hour1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/_1_hr"
-            android:textColor="#0277BD"
-            tools:layout_editor_absoluteX="121dp"
-            tools:layout_editor_absoluteY="43dp" />
+                android:id="@+id/Scenarios1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/scenarios"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="22dp"
-            android:layout_height="32dp"
-            android:contentDescription="@string/_img"
-            app:srcCompat="@drawable/edit_2_svgrepo_com"
-            tools:layout_editor_absoluteX="313dp"
-            tools:layout_editor_absoluteY="20dp" />
+                android:id="@+id/imageView7"
+                android:layout_width="82dp"
+                android:layout_height="109dp"
+                android:contentDescription="@string/img_"
+                app:srcCompat="@mipmap/icon"
+                tools:ignore="VisualLintBounds"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="4dp"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView14"
-            android:layout_width="20dp"
-            android:layout_height="41dp"
-            android:contentDescription="@string/__imag"
-            app:srcCompat="@drawable/delete_3_svgrepo_com"
-            tools:layout_editor_absoluteX="368dp"
-            tools:layout_editor_absoluteY="17dp" />
+                android:id="@+id/imageView9"
+                android:layout_width="17dp"
+                android:layout_height="25dp"
+                android:contentDescription="@string/___todo"
+                app:srcCompat="@drawable/timer_svgrepo_com"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="9dp"
+                app:layout_constraintEnd_toStartOf="@+id/hour1"
+                android:layout_marginEnd="7dp" />
+
+        <TextView
+                android:id="@+id/hour1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_hr"
+                android:textColor="#0277BD"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="13dp"
+                app:layout_constraintEnd_toStartOf="@+id/abedit"
+                android:layout_marginEnd="138dp" />
+
+        <Button
+                android:layout_width="32dp"
+                android:layout_height="33dp"
+                android:id="@+id/abedit"
+                android:background="@drawable/edit_2_svgrepo_com"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="26dp"
+                app:layout_constraintEnd_toStartOf="@+id/delete1"
+                android:layout_marginEnd="40dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+                android:layout_width="33dp"
+                android:layout_height="34dp"
+                android:id="@+id/delete1"
+                android:background="@drawable/delete_3_svgrepo_com"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="27dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:layout_marginEnd="34dp"
+                app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="410dp"
-        android:layout_height="76dp"
-        android:background="#FFFFFF"
-        tools:ignore="DuplicateIds,MissingConstraints,VisualLintBounds"
+            android:id="@+id/relativeLayout"
+            android:layout_width="412dp"
+            android:layout_height="77dp"
+            android:background="#FFFFFF"
+            tools:ignore="DuplicateIds,MissingConstraints,VisualLintBounds"
 
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="286dp">
-
-        <TextView
-            android:id="@+id/Scenarios1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="88dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/scenarios"
-            android:textAlignment="textStart"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:visibility="visible"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="82dp"
-            android:layout_height="109dp"
-            android:contentDescription="@string/img__"
-            app:srcCompat="@mipmap/icon"
-            tools:ignore="VisualLintBounds"
-            tools:layout_editor_absoluteX="6dp"
-            tools:layout_editor_absoluteY="-25dp" />
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="17dp"
-            android:layout_height="25dp"
-            android:contentDescription="@string/__image"
-            app:srcCompat="@drawable/timer_svgrepo_com"
-            tools:layout_editor_absoluteX="97dp"
-            tools:layout_editor_absoluteY="41dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="95dp"
+            app:layout_constraintTop_toBottomOf="@+id/scenarios">
 
         <TextView
-            android:id="@+id/hour1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/__1_hr"
-            android:textColor="#0277BD"
-            tools:layout_editor_absoluteX="121dp"
-            tools:layout_editor_absoluteY="43dp" />
+                android:id="@+id/Scenarios1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/scenarios"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-                android:id="@+id/imageView13"
+                android:id="@+id/imageView7"
+                android:layout_width="73dp"
+                android:layout_height="96dp"
+                android:contentDescription="@string/img__"
+                app:srcCompat="@mipmap/icon"
+                tools:ignore="VisualLintBounds"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="4dp" />
+
+        <ImageView
+                android:id="@+id/imageView9"
                 android:layout_width="19dp"
-                android:layout_height="31dp"
-                android:contentDescription="@string/__img"
-                app:srcCompat="@drawable/edit_2_svgrepo_com"
-                tools:layout_editor_absoluteX="316dp"
-                tools:layout_editor_absoluteY="21dp" />
+                android:layout_height="17dp"
+                android:contentDescription="@string/__image"
+                app:srcCompat="@drawable/timer_svgrepo_com"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView7" />
 
-        <ImageView
-            android:id="@+id/imageView14"
-            android:layout_width="20dp"
-            android:layout_height="41dp"
-            android:contentDescription="@string/imga"
-            app:srcCompat="@drawable/delete_3_svgrepo_com"
-            tools:layout_editor_absoluteX="368dp"
-            tools:layout_editor_absoluteY="17dp" />
+        <TextView
+                android:id="@+id/hour1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/__1_hr"
+                android:textColor="#0277BD"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="@+id/imageView9"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                android:layout_marginStart="20dp"
+                app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/delete1"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edit_2_svgrepo_com"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                android:layout_marginStart="125dp"
+                app:layout_constraintStart_toEndOf="@+id/Scenarios1"
+                app:layout_constraintHorizontal_bias="1.0"
+                android:id="@+id/edit1" />
+
+        <Button
+                android:layout_width="25dp"
+                android:layout_height="31dp"
+                android:id="@+id/delete1"
+                android:layout_marginEnd="34dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/delete_3_svgrepo_com"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/transparent"
-        android:gravity="center"
-        android:padding="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="0dp">
+            android:id="@+id/linearLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp">
 
         <!-- Add status bar content here, e.g., text, icons, etc. -->
         <TextView
-            android:id="@+id/statusbar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Status Bar Content"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
-            tools:ignore="HardcodedText,TextContrastCheck" />
+                android:id="@+id/statusbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Bar Content"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,TextContrastCheck" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/scenarios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="192dp"
-        android:text="@string/scenarios"
-        android:textColor="#130000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/arrow"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="57dp" />
-
-    <ImageView
-        android:id="@+id/arrow"
-        android:layout_width="18dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginBottom="609dp"
-        android:contentDescription="@string/arrow"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toStartOf="@+id/scenarios"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
-        app:srcCompat="@drawable/navigation_back_arrow_svgrepo_com"
-        tools:ignore="MissingConstraints" />
+            android:id="@+id/scenarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scenarios"
+            android:textColor="#130000"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="57dp"
+            tools:layout_editor_absoluteX="139dp"
+            android:textSize="20sp" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="252dp"
-        android:layout_height="58dp"
-        android:background="@drawable/roundshapebtn"
-        android:text="@string/publish_scenarios"
-        android:textColor="#9FA8DA"
-        tools:ignore="MissingConstraints,VisualLintBounds"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="746dp" />
+            android:id="@+id/button4"
+            android:layout_width="252dp"
+            android:layout_height="0dp"
+            android:background="@drawable/roundshapebtn"
+            android:text="@string/publish_scenarios"
+            android:textColor="#9FA8DA"
+            tools:ignore="MissingConstraints,VisualLintBounds"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="26dp"
+            android:layout_marginEnd="62dp"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout1"
-        android:layout_width="410dp"
-        android:layout_height="76dp"
-        android:background="#FFFFFF"
+            android:id="@+id/relativeLayout1"
+            android:layout_width="425dp"
+            android:layout_height="79dp"
+            android:background="#FFFFFF"
 
-        tools:ignore="MissingConstraints,VisualLintBounds"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="528dp">
-
-        <TextView
-            android:id="@+id/Scenarios2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="88dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/scenarios"
-            android:textAlignment="textStart"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:visibility="visible"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="82dp"
-            android:layout_height="109dp"
-            android:contentDescription="@string/__img_"
-            app:srcCompat="@mipmap/icon"
-            tools:ignore="VisualLintBounds"
-            tools:layout_editor_absoluteX="6dp"
-            tools:layout_editor_absoluteY="-25dp" />
-
-        <ImageView
-            android:id="@+id/Timer1"
-            android:layout_width="17dp"
-            android:layout_height="25dp"
-            android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/timer_svgrepo_com"
-            tools:layout_editor_absoluteX="97dp"
-            tools:layout_editor_absoluteY="41dp" />
+            tools:ignore="MissingConstraints,VisualLintBounds"
+            android:layout_marginBottom="108dp"
+            app:layout_constraintBottom_toTopOf="@+id/plus"
+            app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/hour2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/___1_hr"
-            android:textColor="#0277BD"
-            tools:layout_editor_absoluteX="121dp"
-            tools:layout_editor_absoluteY="43dp" />
+                android:id="@+id/Scenarios2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/scenarios"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="3dp"
+                app:layout_constraintBottom_toTopOf="@+id/Timer1" />
 
         <ImageView
-            android:id="@+id/edit1"
-            android:layout_width="22dp"
-            android:layout_height="32dp"
-            android:contentDescription="@string/img"
-            app:srcCompat="@drawable/edit_2_svgrepo_com"
-            tools:layout_editor_absoluteX="313dp"
-            tools:layout_editor_absoluteY="20dp" />
+                android:id="@+id/imageView8"
+                android:layout_width="82dp"
+                android:layout_height="109dp"
+                android:contentDescription="@string/__img_"
+                app:srcCompat="@mipmap/icon"
+                tools:ignore="VisualLintBounds"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="6dp"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
         <ImageView
-            android:id="@+id/delete1"
-            android:layout_width="20dp"
-            android:layout_height="41dp"
-            android:contentDescription="TODO"
-            app:srcCompat="@drawable/delete_3_svgrepo_com"
-            tools:ignore="ContentDescription,HardcodedText"
-            tools:layout_editor_absoluteX="368dp"
-            tools:layout_editor_absoluteY="17dp" />
+                android:id="@+id/Timer1"
+                android:layout_width="17dp"
+                android:layout_height="25dp"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/timer_svgrepo_com"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="13dp"
+                android:layout_marginStart="9dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView8" />
+
+        <TextView
+                android:id="@+id/hour2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/___1_hr"
+                android:textColor="#0277BD"
+                app:layout_constraintStart_toEndOf="@+id/Timer1"
+                app:layout_constraintTop_toTopOf="@+id/Timer1"
+                app:layout_constraintBottom_toBottomOf="@+id/Timer1"
+                android:layout_marginStart="12dp"
+                app:layout_constraintVertical_bias="0.19" />
+
+        <Button
+                android:layout_width="29dp"
+                android:layout_height="36dp"
+                android:id="@+id/edit3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/delete3"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edit_2_svgrepo_com"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+                android:layout_width="35dp"
+                android:layout_height="38dp"
+                android:id="@+id/delete3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/delete_3_svgrepo_com"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="39dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="179dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="193dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout1"
-        app:layout_constraintVertical_bias="0.487"
-        app:srcCompat="@drawable/_491254405_plusaddmoredetail_82972"
-        android:contentDescription="@string/todoè" />
+    <Button
+            android:layout_width="24dp"
+            android:layout_height="21dp"
+            android:id="@+id/backNav"
+            android:background="@drawable/navigation_back_arrow_svgrepo_com"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            android:layout_marginBottom="213dp"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+            app:layout_constraintEnd_toStartOf="@+id/scenarios"
+            android:layout_marginEnd="84dp" />
+
+    <Button
+            android:layout_width="68dp"
+            android:layout_height="47dp"
+            android:id="@+id/plus"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            android:layout_marginEnd="160dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/_491254405_plusaddmoredetail_82972"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

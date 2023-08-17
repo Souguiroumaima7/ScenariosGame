@@ -23,4 +23,6 @@
     <item name="action_exploregame" type="id" />
     <item name="spinner" type="id" />
     <item name="action_game" type="id" />
+    <item name="abedit" type="id" />
+    <item name="delete1" type="id" />
 </resources>

@@ -28,17 +28,6 @@
             android:theme="@style/Theme.ScenariosGames"
             tools:targetApi="31">
         <activity
-                android:name=".userinterface.HomeActivity"
-                android:exported="true"
-                android:label="@string/title_activity_home"
-                android:theme="@style/Theme.ScenariosGames">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
                 android:name=".userinterface.MainActivity"
                 android:exported="true"
                 android:label="MainActivity"
@@ -49,6 +38,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
                 android:name=".creationGame.GameActivity"
                 android:exported="true"
@@ -60,21 +50,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-                android:name=".userinterface.EditProfile"
-                android:exported="true"
-                android:label="EditProfile"
-                android:theme="@style/Theme.AppCompat.Light">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
-                android:name=".userinterface.ExploreGame"
+                android:name=".userinterface.HomeActivity"
                 android:exported="true"
-                android:label="@string/title_activity_explore_game"
+                android:label="@string/title_activity_home"
                 android:theme="@style/Theme.ScenariosGames">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -82,10 +62,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-                android:name=".userinterface.ProfileActivity"
+                android:name=".userinterface.ExploreGame"
                 android:exported="true"
-                android:label="ProfileActivity"
+                android:label="@string/title_activity_explore_game"
                 android:theme="@style/Theme.ScenariosGames">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -115,6 +96,40 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+                android:name=".userinterface.ProfileActivity"
+                android:exported="true"
+                android:label="ProfileActivity"
+                android:theme="@style/Theme.ScenariosGames">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".userinterface.EditProfile"
+                android:exported="true"
+                android:label="EditProfile"
+                android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name=".creationGame.CreateScenariosGame"
+                android:exported="true"
+                android:label="CreateScenariosGame">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
                 android:name=".creationGame.ScenariosUpdate"
                 android:exported="true"
@@ -193,16 +208,7 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity
-                android:name=".creationGame.CreateScenariosGame"
-                android:exported="true"
-                android:label="CreateScenariosGame">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

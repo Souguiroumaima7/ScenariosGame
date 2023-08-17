@@ -29,13 +29,18 @@ class EditProfile : ComponentActivity() {
 
 
          savingbutton.setOnClickListener{
-          val username = usernameEdit.text.toString()
-             val Email = EmailAdressEdit.text.toString()
-            handleButtonClick(username,Email)
+
+          val username = usernameEdit.text
+             username.toString()
+
+             val Email = EmailAdressEdit.text
+             Email.toString()
+
+            handleButtonClick()
          }
     }
 
-    private fun handleButtonClick(username: String, Email: String) {
+    private fun handleButtonClick() {
 
     }
 }

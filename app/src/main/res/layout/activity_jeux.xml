@@ -8,21 +8,6 @@
 
     <!-- Status Bar -->
 
-    <TextView
-            android:text="@string/amir"
-            android:layout_width="57dp"
-            android:layout_height="36dp"
-            android:id="@+id/Amir"
-            android:layout_marginBottom="28dp"
-            app:layout_constraintBottom_toTopOf="@+id/Gamecost"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="292dp"
-            android:background="@drawable/rectangleshape"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            tools:ignore="TextSizeCheck" />
-
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="0dp"
@@ -47,36 +32,19 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/createagame"
-        android:layout_width="161dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="130dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Create a game"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="69dp"
-        android:layout_height="16dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="18dp"
-        android:importantForAccessibility="no"
-        app:layout_constraintBottom_toTopOf="@+id/uploadpicture"
-        app:layout_constraintEnd_toStartOf="@+id/createagame"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:srcCompat="@drawable/navigation_back_arrow_svgrepo_com"
-        tools:ignore="MissingConstraints" />
+            android:id="@+id/createagame"
+            android:layout_width="161dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="130dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Create a game"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
 
     <Button
             android:id="@+id/uploadpicture"
@@ -222,52 +190,73 @@
             android:id="@+id/Gamecost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="20dp"
             android:fontFamily="sans-serif-medium"
             android:text="Game cost ($)"
             android:textColor="#000000"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="HardcodedText,MissingConstraints"
-            tools:layout_editor_absoluteY="534dp" />
+            tools:layout_editor_absoluteY="537dp" />
 
     <Button
-        android:id="@+id/button13"
-        android:layout_width="190dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="124dp"
-        android:background="@drawable/roundshapebtn"
-        android:text="Next"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,TextContrastCheck" />
+            android:id="@+id/button13"
+            android:layout_width="190dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/roundshapebtn"
+            android:text="Next"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,TextContrastCheck" />
 
     <TextView
             android:layout_width="380dp"
             android:layout_height="59dp"
             android:id="@+id/gamecost"
-            android:layout_marginBottom="46dp"
+            android:layout_marginBottom="40dp"
             app:layout_constraintBottom_toTopOf="@+id/button13"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="4dp"
             android:background="@drawable/rectangleshape" />
 
-    <TextView
-            android:text="@string/Mike"
-            android:layout_width="59dp"
-            android:layout_height="30dp"
-            android:id="@+id/Amir"
-            android:layout_marginBottom="29dp"
-            app:layout_constraintBottom_toTopOf="@+id/Gamecost"
+    <Button
+            android:layout_width="28dp"
+            android:layout_height="22dp"
+            android:id="@+id/button3"
+            app:layout_constraintEnd_toStartOf="@+id/createagame"
+            android:layout_marginEnd="2dp"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="41dp"
-            android:background="@drawable/rectangleshape"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            tools:ignore="DuplicateIds,TextSizeCheck" />
+            android:layout_marginStart="11dp"
+            android:layout_marginBottom="36dp"
+            app:layout_constraintBottom_toTopOf="@+id/uploadpicture"
+            android:background="@drawable/navigation_back_arrow_svgrepo_com"
+            app:layout_constraintHorizontal_bias="0.45"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+            android:text="@string/ali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Aliamine"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/Gamecost"
+            android:layout_marginEnd="262dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/rectangleshape" />
+
+    <Button
+            android:text="@string/hamadi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Hamadi"
+            android:layout_marginEnd="84dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toTopOf="@+id/gamecost"
+            android:background="@drawable/rectangleshape" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

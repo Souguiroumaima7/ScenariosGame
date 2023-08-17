@@ -12,7 +12,7 @@ import com.example.scenariosgames.R
 import com.example.scenariosgames.userinterface.ExploreGame
 
 class GameActivity: ComponentActivity() {
-    private lateinit var imageback:ImageButton
+
     private lateinit var uploadpicture:Button
     private lateinit var creategame:TextView
     private lateinit var gametype:TextView
@@ -25,9 +25,9 @@ class GameActivity: ComponentActivity() {
     private lateinit var facileButton:Button
     private lateinit var normaleButton:Button
     private lateinit var difficileButton:Button
-    private lateinit var mikeplayer:EditText
-    private lateinit var amirplayer:EditText
     private lateinit var cost:EditText
+    private lateinit var Backwardbutton:Button
+
    private lateinit var nextbutton:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,17 +35,20 @@ class GameActivity: ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_jeux)
 
-        imageback = findViewById(R.id.imageView5)
-        imageback.setImageResource(R.drawable.navigation_back_arrow_svgrepo_com)
         creategame = findViewById(R.id.createagame)
         gametype = findViewById(R.id.gametype)
         difficulty = findViewById(R.id.Difficulty)
         noofplayers = findViewById(R.id.NoOfPlayers)
         gamecost = findViewById(R.id.Gamecost)
-        mikeplayer = findViewById(R.id.Amir)
-        amirplayer = findViewById(R.id.Amir)
         cost = findViewById(R.id.Gamecost)
 
+        adventurebutton = findViewById(R.id.adventure)
+        explorationButtton = findViewById(R.id.Exploration)
+        engimaButton = findViewById(R.id.Engima)
+        facileButton = findViewById(R.id.Facile)
+        normaleButton = findViewById(R.id.Normal)
+        difficileButton = findViewById(R.id.Difficile)
+        nextbutton = findViewById(R.id.button13)
 
         uploadpicture.setOnClickListener {
             openImagePicker();
@@ -70,6 +73,10 @@ class GameActivity: ComponentActivity() {
         }
         nextbutton.setOnClickListener {
             val intent = Intent(this, CreateScenariosGame::class.java)
+            startActivity(intent)
+        }
+        Backwardbutton.setOnClickListener {
+            val intent = Intent(this,ExploreGame::class.java)
             startActivity(intent)
         }
     }

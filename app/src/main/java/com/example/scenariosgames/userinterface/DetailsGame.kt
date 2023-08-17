@@ -21,12 +21,21 @@ class DetailsGame : ComponentActivity() {
         private lateinit var LevelUp:Button
         private lateinit var Hoursofadminsion:Button
         private lateinit var MapView:MapView
+        private lateinit var require1:TextView
+        private lateinit var require2:TextView
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_detailsjeux)
+
             descriptionText = findViewById(R.id.Description)
             RequirementsText = findViewById(R.id.Requirements)
             ContentView = findViewById(R.id.DescriptionText)
+            exploration = findViewById(R.id.button2)
+            LevelUp = findViewById(R.id.UpLevel)
+            Hoursofadminsion = findViewById(R.id.HoofAdmission)
+            require1 = findViewById(R.id.require1)
+            require2 = findViewById(R.id.require2)
+
             MapView = findViewById(R.id.mapView)
             MapView.onCreate(savedInstanceState)
 

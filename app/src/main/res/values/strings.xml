@@ -112,5 +112,8 @@
     <string name="scenarioscreate">scenarios</string>
     <string name="editprofile">editprofile</string>
     <string name="scenariosdetails">scenariosdetails</string>
+    <string name="main">main</string>
+    <string name="ali">Ali</string>
+    <string name="hamadi">Hamadi</string>
 
 </resources>
