@@ -3,6 +3,7 @@
     <item name="usernameEditText" type="id" />
     <item name="passwordEditText" type="id" />
     <item name="loginButton" type="id" />
+    <item name="profiletext" type="id" />
     <item name="main" type="id" />
     <item name="Game" type="id" />
     <item name="navigation" type="id" />
@@ -21,4 +22,5 @@
     <item name="action_home" type="id" />
     <item name="action_exploregame" type="id" />
     <item name="spinner" type="id" />
+    <item name="action_game" type="id" />
 </resources>

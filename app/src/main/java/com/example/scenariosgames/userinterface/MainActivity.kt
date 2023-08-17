@@ -40,7 +40,9 @@ class MainActivity : AppCompatActivity() {
         }
 
     private fun handleButtonClick() {
-        println("le button est click")
+        val entredcode = secretcode.text
+        entredcode.toString()
+
     }
 
 }

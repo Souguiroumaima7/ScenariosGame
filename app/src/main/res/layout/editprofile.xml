@@ -9,14 +9,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout6"
-            android:layout_width="432dp"
-            android:layout_height="313dp"
+            android:layout_width="410dp"
+            android:layout_height="291dp"
             android:background="@color/Extraviolet"
             android:padding="40dp"
             tools:ignore="MissingConstraints"
             android:orientation="horizontal"
-            tools:layout_editor_absoluteY="-12dp"
-            tools:layout_editor_absoluteX="-3dp">
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/username"
+            app:layout_constraintEnd_toEndOf="parent">
 
         <Button
                 android:text="@string/save"
@@ -32,32 +33,29 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:background="@color/transparent" />
 
-        <TextView
-                android:text="@string/profile__"
-                android:layout_width="85dp"
-                android:layout_height="55dp"
+        <ImageView
+                android:layout_width="79dp"
+                android:layout_height="79dp"
+                app:srcCompat="@mipmap/viewim_photo_foreground"
                 android:id="@+id/profile"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="179dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginBottom="56dp"
-                android:layout_marginEnd="132dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="124dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="95dp"
+                android:contentDescription="@string/profile_" />
+
+        <TextView
+                android:text="@string/_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profiletext"
+                android:layout_marginEnd="136dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/profile"
                 android:textSize="20sp"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintVertical_bias="0.0"
                 tools:ignore="TextContrastCheck" />
 
-        <ImageView
-                android:layout_width="87dp"
-                android:layout_height="72dp"
-                app:srcCompat="@mipmap/viewim_photo_foreground"
-                android:id="@+id/imageView"
-                tools:layout_editor_absoluteY="169dp"
-                tools:layout_editor_absoluteX="133dp"
-                android:contentDescription="@string/viewimage" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <EditText
@@ -67,9 +65,9 @@
             android:ems="10"
             android:id="@+id/editTextUsername"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="450dp"
+            android:layout_marginBottom="432dp"
             android:background="@color/white"
             tools:ignore="LabelFor,SpeakableTextPresentCheck"
             android:autofillHints="" />
@@ -80,10 +78,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/username"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="33dp"
+            android:layout_marginStart="28dp"
             android:textSize="16sp"
             android:textColor="@color/black"
-            android:layout_marginBottom="22dp"
+            android:layout_marginBottom="12dp"
             app:layout_constraintBottom_toTopOf="@+id/editTextUsername" />
 
     <TextView
@@ -92,9 +90,9 @@
             android:layout_height="32dp"
             android:id="@+id/emailadress"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="400dp"
+            android:layout_marginBottom="388dp"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="20dp"
             android:textSize="16sp"
             android:textColor="@color/black"
             tools:ignore="TextSizeCheck" />
@@ -106,9 +104,9 @@
             android:ems="10"
             android:id="@+id/editTextTextEmailAdress"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="332dp"
+            android:layout_marginBottom="324dp"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="20dp"
             android:textColor="@color/black"
             tools:ignore="LabelFor,SpeakableTextPresentCheck"
             android:autofillHints=""
@@ -120,9 +118,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/Gender"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="292dp"
+            android:layout_marginBottom="296dp"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="16dp"
             android:textSize="16sp"
             android:textColor="@color/black" />
 
@@ -134,9 +132,9 @@
             android:ems="10"
             android:id="@+id/editTextTextMultiLine"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="220dp"
+            android:layout_marginBottom="228dp"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="16dp"
             android:background="@color/white"
             tools:ignore="LabelFor,SpeakableTextPresentCheck"
             android:minHeight="48dp"
@@ -150,7 +148,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="188dp"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="20dp"
             android:textSize="16sp"
             android:textColor="@color/black" />
 
@@ -161,22 +159,22 @@
             android:ems="10"
             android:id="@+id/editTextPhone"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="118dp"
+            android:layout_marginBottom="124dp"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="33dp"
+            android:layout_marginStart="16dp"
             android:background="@color/white"
             tools:ignore="LabelFor,SpeakableTextPresentCheck"
             android:autofillHints="" />
 
     <TextView
-            android:text="City"
+            android:text="@string/city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/State"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="29dp"
+            android:layout_marginStart="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="86dp"
+            android:layout_marginBottom="84dp"
             android:textSize="16sp"
             android:textColor="@color/black" />
 
@@ -188,9 +186,9 @@
             android:ems="10"
             android:id="@+id/CityTextEdit"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="31dp"
+            android:layout_marginStart="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="22dp"
+            android:layout_marginBottom="16dp"
             android:background="@color/white"
             tools:ignore="LabelFor,SpeakableTextPresentCheck"
             android:autofillHints="" />

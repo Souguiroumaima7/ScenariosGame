@@ -103,5 +103,14 @@
     <string name="phone">Phone</string>
     <string name="state">State</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="city">City</string>
+    <string name="profile_">TODO</string>
+    <string name="_profile">profile</string>
+    <string name="game">game</string>
+    <string name="gamedetail">gamedetail</string>
+    <string name="item">Item</string>
+    <string name="scenarioscreate">scenarios</string>
+    <string name="editprofile">editprofile</string>
+    <string name="scenariosdetails">scenariosdetails</string>
 
 </resources>
