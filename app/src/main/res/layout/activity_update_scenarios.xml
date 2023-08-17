@@ -130,13 +130,13 @@
             tools:layout_editor_absoluteY="43dp" />
 
         <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="22dp"
-            android:layout_height="32dp"
-            android:contentDescription="@string/__img"
-            app:srcCompat="@drawable/edit_2_svgrepo_com"
-            tools:layout_editor_absoluteX="313dp"
-            tools:layout_editor_absoluteY="20dp" />
+                android:id="@+id/imageView13"
+                android:layout_width="19dp"
+                android:layout_height="31dp"
+                android:contentDescription="@string/__img"
+                app:srcCompat="@drawable/edit_2_svgrepo_com"
+                tools:layout_editor_absoluteX="316dp"
+                tools:layout_editor_absoluteY="21dp" />
 
         <ImageView
             android:id="@+id/imageView14"

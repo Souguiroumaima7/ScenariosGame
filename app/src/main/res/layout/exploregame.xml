@@ -7,21 +7,20 @@
     <!-- Status Bar -->
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="412dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="68dp"
-        android:background="@color/transparent"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.648"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="UnknownIdInLayout,VisualLintBounds">
+            android:id="@+id/linearLayout"
+            android:layout_width="442dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="68dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UnknownIdInLayout,VisualLintBounds">
 
     </LinearLayout>
 
@@ -43,50 +42,30 @@
         app:srcCompat="@mipmap/viewim_photo_round" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="154dp"
-        android:layout_marginBottom="19dp"
-        android:text="@string/location"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="VisualLintBounds" />
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/location"
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="VisualLintBounds"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginBottom="756dp"
-        android:layout_weight="1"
-        android:text="@string/vvvvv"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="10dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginBottom="793dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:srcCompat="@drawable/back_up_down_svgrepo_com"
-        android:contentDescription="@string/ccccc"
-        tools:ignore="VisualLintBounds" />
-
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="15dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="780dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/menu_svgrepo_com"
-        android:contentDescription="@string/ccccccc"
-        tools:ignore="VisualLintBounds" />
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginBottom="756dp"
+            android:layout_weight="1"
+            android:text="@string/vvvvv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
 
     <ImageView
         android:id="@+id/imageView21"
@@ -100,48 +79,99 @@
         android:contentDescription="@string/vvvvvv" />
 
     <TextView
-        android:id="@+id/TheTuilriesQuest"
-        android:layout_width="140dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/_the_tuilries_quest"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/AnimaAgentLudique1"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextSizeCheck,VisualLintOverlap" />
+            android:id="@+id/TheTuilriesQuest"
+            android:layout_width="140dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/_the_tuilries_quest"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/AnimaAgentLudique1"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextSizeCheck,VisualLintOverlap"
+            android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/AnimaAgentLudique1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="356dp"
-        android:text="@string/anima_agent_ludique"
-        android:textColor="#150000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="VisualLintOverlap" />
+            android:id="@+id/AnimaAgentLudique1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="356dp"
+            android:text="@string/anima_agent_ludique"
+            android:textColor="#150000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="VisualLintOverlap"
+            android:textSize="16sp" />
+
+
 
     <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="128dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="368dp"
-        android:contentDescription="@string/vvvvvvv"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/TheTuilriesQuest"
-        app:srcCompat="@drawable/arrow_forward_icon" />
+            android:id="@+id/imageView26"
+            android:layout_width="745dp"
+            android:layout_height="406dp"
+            app:srcCompat="@mipmap/image_photo"
+            tools:layout_editor_absoluteX="-156dp"
+            tools:layout_editor_absoluteY="661dp"
+            tools:ignore="MissingConstraints,VisualLintBounds"
+            android:contentDescription="@string/vvvvvvvv" />
 
-    <ImageView
-        android:id="@+id/imageView26"
-        android:layout_width="745dp"
-        android:layout_height="406dp"
-        app:srcCompat="@mipmap/image_photo"
-        tools:layout_editor_absoluteX="-167dp"
-        tools:layout_editor_absoluteY="655dp"
-        tools:ignore="MissingConstraints,VisualLintBounds"
-        android:contentDescription="@string/vvvvvvvv" />
+    <Button
+            android:text="@string/explore_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Explore"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="77dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView26"
+            android:background="@drawable/roundshapebtn"
+            tools:ignore="TextContrastCheck" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ninety"
+            android:layout_marginBottom="77dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView26"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@+id/Explore"
+            tools:ignore="SpeakableTextPresentCheck,TextContrastCheck"
+            android:text="@string/_90_min"
+            android:background="@drawable/roundshapebtn" />
+
+    <Button
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:id="@+id/row"
+            android:layout_marginStart="61dp"
+            app:layout_constraintStart_toEndOf="@+id/AnimaAgentLudique1"
+            android:layout_marginBottom="155dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView26"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:background="@color/transparent"
+            android:drawableStart="@drawable/forward_arrow" />
+
+    <Button
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:id="@+id/_menuView"
+            android:background="@drawable/menu_svgrepo_com"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:id="@+id/updowning"
+            android:layout_marginBottom="124dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView21"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            android:background="@drawable/back_up_down_svgrepo_com"
+            android:layout_marginStart="12dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

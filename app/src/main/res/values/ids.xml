@@ -12,10 +12,13 @@
     <item name="UpdateScenarios" type="id" />
     <item name="UserManager" type="id" />
     <item name="GameUpdate" type="id" />
-
+    <item name="next" type="id" />
     <item name="nameEditText" type="id" />
     <item name ="Stargame" type="id" />
     <item name="buttonsign" type="id" />
     <item name="EmailAddressEdit" type="id" />
     <item name="constraintLayout" type="id" />
+    <item name="action_home" type="id" />
+    <item name="action_exploregame" type="id" />
+    <item name="spinner" type="id" />
 </resources>

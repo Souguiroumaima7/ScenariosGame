@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+        xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+            android:name="android.permission.READ_EXTERNAL_STORAGE"
+            tools:ignore="ScopedStorage" />
+
+    <meta-data
+            android:name="com.google.android.geo.AIzaSyCsqqIX3EbCEIFRbkezbhj0bhpMPK40b1s"
+            android:value="AIzaSyCsqqIX3EbCEIFRbkezbhj0bhpMPK40b1s" />
 
     <queries>
         <provider android:authorities="com.facebook.katana.provider.PlatformProvider" /> <!-- allows app to access Facebook app features -->
@@ -11,20 +18,20 @@
     </queries>
 
     <application
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.ScenariosGames"
-        tools:targetApi="31">
+            android:allowBackup="true"
+            android:dataExtractionRules="@xml/data_extraction_rules"
+            android:fullBackupContent="@xml/backup_rules"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.ScenariosGames"
+            tools:targetApi="31">
         <activity
-            android:name=".UserInterface.ExploreGame"
-            android:exported="true"
-            android:label="@string/title_activity_explore_game"
-            android:theme="@style/Theme.ScenariosGames">
+                android:name=".userinterface.HomeActivity"
+                android:exported="true"
+                android:label="@string/title_activity_home"
+                android:theme="@style/Theme.ScenariosGames">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,20 +39,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".UserInterface.ProfileActivity"
-            android:exported="false"
-            android:label="@string/title_activity_profile"
-            android:theme="@style/Theme.ScenariosGames" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
-
-        <activity
-            android:name=".UserInterface.MainActivity"
-            android:exported="true"
-            android:label="ScenariosGames"
-            android:theme="@style/Theme.AppCompat.Light">
+                android:name=".userinterface.MainActivity"
+                android:exported="true"
+                android:label="MainActivity"
+                android:theme="@style/Theme.AppCompat.Light">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -53,69 +50,140 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Administration.UserManager"
-            android:exported="false"
-            android:label="UserManager" />
+                android:name=".creationGame.GameActivity"
+                android:exported="true"
+                android:label="GameActivity"
+                android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".UserInterface.LogInActivity"
-            android:exported="false"
-            android:label="LogIn"
-            android:theme="@style/Theme.ScenariosGames" />
+                android:name=".userinterface.EditProfile"
+                android:exported="true"
+                android:label="EditProfile"
+                android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".UserInterface.SignUpActivity"
-            android:exported="false"
-            android:label="SignUp"
-            android:theme="@style/Theme.ScenariosGames" />
+                android:name=".userinterface.ExploreGame"
+                android:exported="true"
+                android:label="@string/title_activity_explore_game"
+                android:theme="@style/Theme.ScenariosGames">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".CreationGame.ScenariosUpdate"
-            android:exported="false"
-            android:label="ScenariosUpdate"
-            android:theme="@style/Theme.ScenariosGames" />
+                android:name=".userinterface.ProfileActivity"
+                android:exported="true"
+                android:label="ProfileActivity"
+                android:theme="@style/Theme.ScenariosGames">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name="com.example.scenariosapplication.Administration.GameUpdate"
-            android:exported="false"
-            android:label="GestionJeux"
-            android:theme="@style/Theme.ScenariosGames" />
+                android:name=".userinterface.LogInActivity"
+                android:exported="true"
+                android:label="LogIn"
+                android:theme="@style/Theme.ScenariosGames">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name="com.example.scenariosapplication.UserInterface.EmailConnection"
-            android:exported="false"
-            android:label="EmailConnection"
-            android:theme="@style/Theme.ScenariosGames" />
+                android:name=".userinterface.SignUpActivity"
+                android:exported="true"
+                android:label="SignUp"
+                android:theme="@style/Theme.ScenariosGames">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name="com.example.scenariosapplication.UserInterface.FacebookConnection"
-            android:exported="false"
-            android:label="FacebookConnection"
-            android:theme="@style/Theme.ScenariosGames" />
+                android:name=".creationGame.ScenariosUpdate"
+                android:exported="true"
+                android:label="ScenariosUpdate"
+                android:theme="@style/Theme.ScenariosGames">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name="com.example.scenariosapplication.UserInterface.GoogleConnection"
-            android:exported="false"
-            android:label="GoogleConnection"
-            android:theme="@style/Theme.ScenariosGames" />
+                android:name="com.example.scenariosapplication.UserInterface.EmailConnection"
+                android:exported="true"
+                android:label="EmailConnection"
+                android:theme="@style/Theme.ScenariosGames">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name="com.example.scenariosapplication.UserInterface.HomeActivity"
-            android:exported="false"
-            android:label="HomeActivity"
-            android:theme="@style/Theme.ScenariosGames" />
+                android:name="com.example.scenariosapplication.UserInterface.FacebookConnection"
+                android:exported="true"
+                android:label="FacebookConnection"
+                android:theme="@style/Theme.ScenariosGames">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".UserInterface.DetailsGame"
-            android:exported="false"
-            android:label="DetailsJeux"
-            android:theme="@style/Theme.ScenariosGames" />
+                android:name="com.example.scenariosapplication.UserInterface.GoogleConnection"
+                android:exported="true"
+                android:label="GoogleConnection"
+                android:theme="@style/Theme.ScenariosGames">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".userinterface.DetailsGame"
+                android:exported="true"
+                android:label="DetailsJeux"
+                android:theme="@style/Theme.ScenariosGames">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/facebook_app_id" />
         <meta-data
-            android:name="com.facebook.sdk.ClientToken"
-            android:value="@string/facebook_client_token" />
+                android:name="com.facebook.sdk.ClientToken"
+                android:value="@string/facebook_client_token" />
 
         <activity
-            android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name" />
+                android:name="com.facebook.FacebookActivity"
+                android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
         <activity
-            android:name="com.facebook.CustomTabActivity"
-            android:exported="true">
+                android:name="com.facebook.CustomTabActivity"
+                android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -123,6 +191,16 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".creationGame.CreateScenariosGame"
+                android:exported="true"
+                android:label="CreateScenariosGame">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

@@ -78,5 +78,30 @@
     <string name="vvvvvvvv">TODO</string>
     <string name="vvvvv">Paris</string>
     <string name="audio_recording">Audio recording</string>
+    <string name="imageview12">imageview12</string>
+    <string name="imageview24">imageview</string>
+    <string name="home">Home</string>
+    <string name="exploregame">ExploreGame</string>
+    <string name="profileview">profile</string>
+    <string name="down">Down</string>
+    <string name="mike">mike\n</string>
+    <string name="Amir">AMir\n</string>
+    <string name="amir">Amir</string>
+    <string name="Mike">Mike</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <string name="next">next</string>
+    <string name="explore_guest">explore guest</string>
+    <string name="_90_min">90 min</string>
+    <string name="__profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="profile__">Profile</string>
+    <string name="viewimage">TODO</string>
+    <string name="username">username</string>
+    <string name="username_">username</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="phone">Phone</string>
+    <string name="state">State</string>
+    <string name="title_activity_home">HomeActivity</string>
 
 </resources>

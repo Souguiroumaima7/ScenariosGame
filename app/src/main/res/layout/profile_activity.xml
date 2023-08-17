@@ -19,28 +19,29 @@
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="229dp"
-        android:background="@color/transparent"
-        android:gravity="center"
-        android:padding="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/view8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="UnknownIdInLayout">
+            android:id="@+id/linearLayout4"
+            android:layout_width="433dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="229dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UnknownIdInLayout"
+            app:layout_constraintHorizontal_bias="1.0">
 
         <!-- Add status bar content here, e.g., text, icons, etc. -->
         <TextView
-            android:id="@+id/statusbar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/status_bar_content"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            tools:ignore="TextContrastCheck" />
+                android:id="@+id/statusbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_bar_content"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                tools:ignore="TextContrastCheck" />
     </LinearLayout>
 
     <TextView
@@ -79,18 +80,6 @@
         android:text="@string/edit_profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/arrowback"
-        android:layout_width="18dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginBottom="774dp"
-        android:contentDescription="@string/Arrowback"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/navigation_back_arrow_svgrepo_com"
-        tools:ignore="VisualLintBounds" />
 
     <TextView
         android:id="@+id/finshedgame"
@@ -139,16 +128,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="111dp"
-        android:layout_height="22dp"
-        android:contentDescription="@string/imageview___"
-        app:srcCompat="@drawable/arrow_forward_icon"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="242dp"
-        tools:layout_editor_absoluteY="587dp" />
-
-    <ImageView
         android:id="@+id/imageView23"
         android:layout_width="598dp"
         android:layout_height="415dp"
@@ -162,16 +141,41 @@
         tools:ignore="MissingConstraints,VisualLintBounds" />
 
     <ImageView
-        android:id="@+id/imageView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="69dp"
-        app:layout_constraintBottom_toTopOf="@+id/finshedgame"
-        app:layout_constraintEnd_toStartOf="@+id/JackFarst"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/viewim_photo_round" />
+            android:id="@+id/imageView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="68dp"
+            app:layout_constraintBottom_toTopOf="@+id/finshedgame"
+            app:layout_constraintEnd_toStartOf="@+id/JackFarst"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@mipmap/viewim_photo_round"
+            android:contentDescription="@string/imageview24"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+            android:layout_width="77dp"
+            android:layout_height="0dp"
+            android:id="@+id/forward"
+            android:background="@color/transparent"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:layout_marginBottom="56dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView23"
+            android:layout_marginStart="35dp"
+            app:layout_constraintStart_toEndOf="@+id/TheTuilriesQuest"
+            android:drawableStart="@drawable/forward_arrow" />
+
+    <Button
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:id="@+id/backward"
+            android:layout_marginBottom="36dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView24"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/navigation_back_arrow_svgrepo_com"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
