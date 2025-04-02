@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config>
+        <domain includeSubdomains="true">api.yourgame.com</domain>
+        <pin-set expiration="2026-01-01">
+            <!-- SHA-256 hash of your server's public key -->
+            <pin digest="SHA-256">r8udi/Ucs1c4rh6RIJks0CBC9sJRQQUFGZkbNj2D4pk=</pin>
+            <!-- Always include at least one backup pin in case you need to change certificates -->
+            <pin digest="SHA-256">backup-pin-hash-here</pin>
+        </pin-set>
+        <trustkit-config enforcePinning="true" />
+    </domain-config>
+    
+    <!-- Disable cleartext traffic for the entire app -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
+*/
+
+// 2. REFERENCE THE CONFIG IN MANIFEST
+// In AndroidManifest.xml add:
+/*
+<application
+    ...
+    android:networkSecurityConfig="@xml/network_security_config"
+    ... >
