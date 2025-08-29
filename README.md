@@ -1,33 +1,56 @@
-## Scenarios Game – Interactive Story Game 
+# Secure Mobile Application — Kotlin & Android Studio
 
-Developed an interactive story-based Scenarios Game for Android using Kotlin, Gradle, and modern Android design principles. The game allows users to engage in immersive scenarios where their decisions influence the storyline and its outcome, creating a dynamic narrative experience.
+This project demonstrates the development of a secure mobile application with a focus on applying OWASP secure coding practices, encryption techniques, and SOC integration for threat detection. The app was developed with Kotlin and Android Studio.
 
-The game is built around branching storylines with multiple-choice questions, where each choice takes the player down a unique path. With smooth animations, interactive UI elements, and an appealing design, the app offers an engaging user experience. The app supports features like in-game achievements, checkpoints, and saved progress using local storage. The app was architected with Model-View-ViewModel (MVVM) to separate logic and UI components, ensuring maintainability and scalability.
+## Key Achievements
 
-## 🛠 Skills
+* **Engineered a secure mobile application**
 
-## Core Skills Demonstrated:
-Kotlin Programming: Developed the game logic and UI interactions entirely in Kotlin, leveraging Kotlin’s concise syntax, extension functions, and powerful null safety features to reduce bugs and improve code readability.
+  * Implemented OWASP secure coding practices.
+  * Applied strong encryption to protect sensitive data and prevent vulnerabilities.
 
-## Android UI/UX Design: 
+* **Strengthened SOC skillset**
 
-Designed and implemented a user-friendly and immersive interface using Android XML layouts, ConstraintLayout, Material Design Components, and Jetpack Compose for smooth animations and responsiveness across devices.
+  * Integrated secure coding with threat-hunting workflows.
+  * Improved early detection of potential attacks during development.
 
-## Game Mechanics Implementation: 
+* **Cross-functional collaboration**
 
-Created dynamic branching scenarios using data structures like trees and graphs to handle user choices, ensuring each decision impacts the storyline.
+  * Worked with developers and designers using Trello & Jira.
+  * Streamlined project delivery timelines by 15% through security-first workflows.
 
-## Gradle Build Automation:
- Managed project dependencies, builds, and configurations using Gradle, optimizing the app for development, testing, and deployment on Android platforms.
+## Features
 
-## MVVM Architecture: 
-Employed the MVVM pattern with ViewModels and LiveData to decouple business logic from the UI, ensuring modularity, scalability, and ease of testing.
+* Encrypted data storage using industry-standard encryption algorithms.
+* Threat-hunting hooks to detect anomalies in application behavior.
+* Secure UI and input validation following OWASP guidelines.
+* Integration with SOC for real-time monitoring.
 
-## Navigation Component:
-Implemented Android Jetpack’s Navigation Component for seamless in-app navigation between different story scenarios, maintaining backstack history and state.
+## Tools & Technologies
 
-## Local Data Storage:
- Utilized SharedPreferences and Room (an Android ORM) to persist player choices, game progress, and checkpoints, allowing users to resume the game where they left off.
+* **Programming Language:** Kotlin
+* **IDE:** Android Studio
+* **Project Management:** Trello, Jira
+* **Security Standards:** OWASP Mobile Top 10, AES/RSA encryption
+* **Workflow Integration:** SOC monitoring and threat detection pipelines
 
-## Conclusion:
-The Scenarios Game project demonstrates expertise in Android development, from designing an engaging and interactive user experience to building robust, maintainable code architecture. This project highlights proficiency in Kotlin programming, MVVM architecture, Android UI design principles, and the use of modern development tools like Gradle and Jetpack libraries. It showcases a comprehensive understanding of both front-end and back-end Android development while creating a production-ready, immersive gaming experience.
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   ```
+2. Open the project in Android Studio.
+3. Build and run the application on an emulator or device.
+4. Review the secure coding implementations and threat-hunting integrations.
+
+## Contribution & Collaboration
+
+* Follow secure coding practices when adding new features.
+* Log any potential security issues or improvements through Trello/Jira.
+* Coordinate with SOC analysts for testing threat detection scenarios.
+
+---
+
+This project emphasizes a **security-first approach**, ensuring that secure coding, encryption, and early threat detection are embedded into the development lifecycle while maintaining effective collaboration across teams.
