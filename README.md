@@ -4,8 +4,6 @@ Developed an interactive story-based Scenarios Game for Android using Kotlin, Gr
 
 The game is built around branching storylines with multiple-choice questions, where each choice takes the player down a unique path. With smooth animations, interactive UI elements, and an appealing design, the app offers an engaging user experience. The app supports features like in-game achievements, checkpoints, and saved progress using local storage. The app was architected with Model-View-ViewModel (MVVM) to separate logic and UI components, ensuring maintainability and scalability.
 
-
-
 ## 🛠 Skills
 
 ## Core Skills Demonstrated:
@@ -30,15 +28,6 @@ Implemented Android Jetpack’s Navigation Component for seamless in-app navigat
 
 ## Local Data Storage:
  Utilized SharedPreferences and Room (an Android ORM) to persist player choices, game progress, and checkpoints, allowing users to resume the game where they left off.
-
-## Animations & Transitions:
- Integrated Android Animations and transitions to create a smooth and immersive experience when transitioning between game scenarios and user interactions.
-
-## In-App Achievements & Rewards:
- Implemented an in-game reward system for unlocking achievements and badges based on user decisions and gameplay outcomes.
-
-## Testing and Debugging: 
-Utilized JUnit and Espresso to perform unit and UI testing, ensuring that the game runs smoothly across multiple devices and Android versions.
 
 ## Conclusion:
 The Scenarios Game project demonstrates expertise in Android development, from designing an engaging and interactive user experience to building robust, maintainable code architecture. This project highlights proficiency in Kotlin programming, MVVM architecture, Android UI design principles, and the use of modern development tools like Gradle and Jetpack libraries. It showcases a comprehensive understanding of both front-end and back-end Android development while creating a production-ready, immersive gaming experience.
