@@ -1,214 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools">
+plugins {
+id("com.android.application")
+kotlin("android")
+kotlin("plugin.serialization")
+}
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission
-            android:name="android.permission.READ_EXTERNAL_STORAGE"
-            tools:ignore="ScopedStorage" />
 
-    <meta-data
-            android:name="com.google.android.geo.AIzaSyCsqqIX3EbCEIFRbkezbhj0bhpMPK40b1s"
-            android:value="AIzaSyCsqqIX3EbCEIFRbkezbhj0bhpMPK40b1s" />
+android {
+namespace = "com.example.securetasks"
+compileSdk = 35
 
-    <queries>
-        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" /> <!-- allows app to access Facebook app features -->
-        <provider android:authorities="com.facebook.orca.provider.PlatformProvider" /> <!-- allows sharing to Messenger app -->
-    </queries>
 
-    <application
-            android:allowBackup="true"
-            android:dataExtractionRules="@xml/data_extraction_rules"
-            android:fullBackupContent="@xml/backup_rules"
-            android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"
-            android:theme="@style/Theme.ScenariosGames"
-            tools:targetApi="31">
-        <activity
-                android:name=".userinterface.MainActivity"
-                android:exported="true"
-                android:label="MainActivity"
-                android:theme="@style/Theme.AppCompat.Light">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+defaultConfig {
+applicationId = "com.example.securetasks"
+minSdk = 26
+targetSdk = 35
+versionCode = 1
+versionName = "1.0"
+vectorDrawables.useSupportLibrary = true
+}
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <activity
-                android:name=".creationGame.GameActivity"
-                android:exported="true"
-                android:label="GameActivity"
-                android:theme="@style/Theme.AppCompat.Light">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+buildTypes {
+release {
+isMinifyEnabled = true
+proguardFiles(
+getDefaultProguardFile("proguard-android-optimize.txt"),
+"proguard-rules.pro"
+)
+}
+debug { isDebuggable = true }
+}
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <activity
-                android:name=".userinterface.HomeActivity"
-                android:exported="true"
-                android:label="@string/title_activity_home"
-                android:theme="@style/Theme.ScenariosGames">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+compileOptions {
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+}
+kotlinOptions { jvmTarget = "17" }
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <activity
-                android:name=".userinterface.ExploreGame"
-                android:exported="true"
-                android:label="@string/title_activity_explore_game"
-                android:theme="@style/Theme.ScenariosGames">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+buildFeatures { compose = true }
+composeOptions { kotlinCompilerExtensionVersion = "1.5.15" }
+}
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-                android:name=".userinterface.LogInActivity"
-                android:exported="true"
-                android:label="LogIn"
-                android:theme="@style/Theme.ScenariosGames">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-                android:name=".userinterface.SignUpActivity"
-                android:exported="true"
-                android:label="SignUp"
-                android:theme="@style/Theme.ScenariosGames">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+dependencies {
+// Compose
+val composeBom = platform("androidx.compose:compose-bom:2024.10.00")
+implementation(composeBom)
+androidTestImplementation(composeBom)
+implementation("androidx.activity:activity-compose:1.9.2")
+implementation("androidx.compose.ui:ui")
+implementation("androidx.compose.material3:material3")
+implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
+implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.4")
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-                android:name=".userinterface.ProfileActivity"
-                android:exported="true"
-                android:label="ProfileActivity"
-                android:theme="@style/Theme.ScenariosGames">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-                android:name=".userinterface.EditProfile"
-                android:exported="true"
-                android:label="EditProfile"
-                android:theme="@style/Theme.AppCompat.Light">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+// AndroidX Security Crypto for AES-GCM with Keystore-backed keys
+implementation("androidx.security:security-crypto:1.1.0-alpha06")
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <activity
-                android:name=".creationGame.CreateScenariosGame"
-                android:exported="true"
-                android:label="CreateScenariosGame">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
-                android:name=".creationGame.ScenariosUpdate"
-                android:exported="true"
-                android:label="ScenariosUpdate"
-                android:theme="@style/Theme.ScenariosGames">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-                android:name="com.example.scenariosapplication.UserInterface.EmailConnection"
-                android:exported="true"
-                android:label="EmailConnection"
-                android:theme="@style/Theme.ScenariosGames">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-                android:name="com.example.scenariosapplication.UserInterface.FacebookConnection"
-                android:exported="true"
-                android:label="FacebookConnection"
-                android:theme="@style/Theme.ScenariosGames">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-                android:name="com.example.scenariosapplication.UserInterface.GoogleConnection"
-                android:exported="true"
-                android:label="GoogleConnection"
-                android:theme="@style/Theme.ScenariosGames">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-                android:name=".userinterface.DetailsGame"
-                android:exported="true"
-                android:label="DetailsJeux"
-                android:theme="@style/Theme.ScenariosGames">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <meta-data
-                android:name="com.facebook.sdk.ApplicationId"
-                android:value="@string/facebook_app_id" />
-        <meta-data
-                android:name="com.facebook.sdk.ClientToken"
-                android:value="@string/facebook_client_token" />
-
-        <activity
-                android:name="com.facebook.FacebookActivity"
-                android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
-        <activity
-                android:name="com.facebook.CustomTabActivity"
-                android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data android:scheme="@string/fb_login_protocol_scheme" />
-            </intent-filter>
-        </activity>
-
-    </application>
-
-</manifest>
+// Kotlinx Serialization (JSON)
+implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1")
+}
